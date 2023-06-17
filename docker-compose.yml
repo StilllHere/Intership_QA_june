@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  test_runner:
+    build: .
+    image: python:3.12.0b2-alpine3.18
+    container_name: pytest
+    volumes:
+      - .:/app/
